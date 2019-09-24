@@ -7,46 +7,109 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+      #LeftHeader {
+        padding-top: 2em
+      }
+      section > div {
+        padding-top: 1em;
+        padding-bottom: 1em
+      }
+      .normalWords {
+        color:#5A5A5A 
+      }
+    </style>
+    <script>
+      const darkBlueStyling = {
+        fontWeight: 'bold',
+        color: '#2A6696'
+      }
+    </script>
   </head>
   <body>
+    <audio src="./media/Audio/180601 CantComeNearYou2.wav" type="audio/wav" width="0" height="0" id="CantComeNearYou"></audio>
+    <audio src="./media/Audio/JoonLoop.wav" type="audio/wav" width="0" height="0" id="JoonLoop"> </audio>
     <div class="wrapper">
-      <header>
-        <h1>Izen Brast Huang</h1>
-        <img src="./media/Izen42Bathroom.png" alt="Izen Brast Huang">
-        <p>Undergraduate Student</p>
-        <p style="font-weight: bold; color: lightblue">Dept. CPEG</p>
-        <p style="font-weight: bold; color: lightblue">HKUST</p>
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
+      <header id="LeftHeader">
+        <h1 class="ui header">Izen Brast Huang</h1>
+        <img src="./media/42Bathroom.png" alt="Izen Brast Huang" width='250px' height='250px'>
+        <br >
+        <p class="normalWords">Undergraduate Student</p>
+        <p style="font-weight: bold; color: #2A6696">Studying Computer Engineering<br>at Hong Kong University of Science and Technology</p>
+        <!-- <p class="view"><a href="http://github.com/izennn">View my projects on GitHub</a></p> -->
+        <p style="font-weight: bold; color: #2A6696"><a href="http://github.com/izennn">GitHub page</a></p> 
+        <p class="view">
+          <a href="./media/IzenHuangResume.pdf" style="font-weight: bold; color: #2A6696">Cirriculum Vitae (CV)</a><br>
+          <small class="normalWords"style="font-style: italic">Last updated Sep 1 2019</small>
+        </p>            
         <!-- <ul>
           <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
         </ul> -->
+        <br><br>
+        <div class="ui link list">
+          <!-- <div class="active item">Table of Contents</div> -->
+          <a class="item" href="#About">Introduction</a>
+          <a class="item" href="#PastProjects">Past Projects</a>
+          <a class="item" href="#PastInternships">Past Interships</a>
+          <a class="item" href="#MusicAndVideos">Music & Videos</a>
+          <a class="item" href="#Contact">Contact</a>
+        </div>
       </header>
-      <section>
-        <h1>GitHub Flavored Markdown</h1>
+      <section style="display: flex; flex-direction :column">
+        <div id="About">
+          <h2 class="ui header">
+            Introduction
+          </h2>
+          <p class="normalWords">
+            Izen Brast Huang is curretnly a student studying at HKUST, pursuing a degree in computer engineering. His final year project (FYP) aims to analyze and implement machine learning models for stock prediction. The project is advised by <a href="https://www.cse.ust.hk/~rossiter/"style="font-weight: bold; color: #2A6696">Prof. Rossiter</a> from the Dept. of CSE.
+          </p>
+          <p class="normalWords">Izen main interests are programming (web development, software engineering, and recently machine learning), as well as composition of music and editing videos. Below are some examples of the work that he's done.</p>
+        </div>
+        <br><div class="ui divider"></div>
+        <div id="PastProjects">
+          <h2 class="ui header">
+            Past Projects
+            <div class="sub header"><em>Projects I worked on as a student at the <a href="https://www.ust.hk/home" style="color: #2A6696">Hong Kong University of Science and Technology (HKUST)</a> and <a href="https://www.42.us.org/" style="color: #2A6696">42 Silicon Valley School</a></em></div>
+          </h2>
+        </div>
+        <br><div class="ui divider"></div>
+        <div id="PastInternships">
+            <h2 class="ui header">
+              Past Internships
+              <div class="sub header"><em>A detailed overview of my experiences from past internships</em></div>
+            </h2>
+            <br><br><br><br><br><br><br><br><br>
+        </div>
+        <br><div class="ui divider"></div>
+        <div id="MusicAndVideos">
+          <h2 class="ui header">
+            Music and Videos
+            <div class="sub header"><em>Brief overview of music that I've compsed and videos that I've edited</em></div>
+          </h2>          
+          <div class="MusicControls">
+            <audio 
+            controls
+            src="./media/Audio/JoonLoop.wav"
+            >
+            </audio>            
+          </div>
+        </div>
+        <br><div class="ui divider"></div>
+        <div id="Contact">
+          <h2 class="ui header">
+            Contact
+          </h2>
+          <p class="normalWords">If you wish to contact Izen, you may send a message to his personal email <em style="color: #2A6696">izenhuang@hotmail.com</em></p>
+        </div>
 
-        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
-
-        <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
-
-        <p>Roses are red<br>
-        Violets are blue</p>
-
-        <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
-
-        <p>Roses are red<br><br>
-        Violets are blue</p>
-
-        <p>Oh, and one thing I cannot stand is the mangling of words with multiple underscores in them like perform_complicated_task or do_this_and_do_that_and_another_thing.</p>
-
-        <h2>A bit of the GitHub spice</h2>
-
-        <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
+        <!-- <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
 
         <ul>
           <li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
@@ -198,11 +261,12 @@ end
         <h2>Crazy linking action</h2>
 
         <p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from<br>
-        <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+        <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p> -->
       </section>
       <footer>
-        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p class="normalWords"><small>&copy; 2019 <a href="izennn.github.io" style="font-weight: bold; color: #2A6696">Izen Huang</a> ALL RIGHTS RESERVED.</small></p>
+        <!-- <p>This website's styling is from <a href="http://github.com/orderedlist">Steve Smith</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
