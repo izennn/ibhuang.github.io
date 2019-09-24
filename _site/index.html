@@ -29,6 +29,13 @@
         fontWeight: 'bold',
         color: '#2A6696'
       }
+      const audios = document.getElementsByTagName('auido');
+      function playMusic(songNo) {
+        audios[songNo].play();
+      }
+      function pauseMusic(songNo) {
+        audios[songNo].pause();
+      }
     </script>
   </head>
   <body>
@@ -56,26 +63,49 @@
         <div class="ui link list">
           <!-- <div class="active item">Table of Contents</div> -->
           <a class="item" href="#About">Introduction</a>
-          <a class="item" href="#PastProjects">Past Projects</a>
+          <a class="item" href="#HCIProjects">COMP 4461 Projects</a>
+          <a class="item" href="#PastProjects">Personal Projects</a>
           <a class="item" href="#PastInternships">Past Interships</a>
           <a class="item" href="#MusicAndVideos">Music & Videos</a>
           <a class="item" href="#Contact">Contact</a>
         </div>
       </header>
-      <section style="display: flex; flex-direction :column">
+      <section style="display: flex; flex-direction :column;">
         <div id="About">
           <h2 class="ui header">
             Introduction
           </h2>
           <p class="normalWords">
-            Izen Brast Huang is curretnly a student studying at HKUST, pursuing a degree in computer engineering. His final year project (FYP) aims to analyze and implement machine learning models for stock prediction. The project is advised by <a href="https://www.cse.ust.hk/~rossiter/"style="font-weight: bold; color: #2A6696">Prof. Rossiter</a> from the Dept. of CSE.
+            I am currently a student studying at HKUST, pursuing a degree in computer engineering. My final year project (FYP) aims to analyze and implement machine learning models for stock prediction. The project is advised by <a href="https://www.cse.ust.hk/~rossiter/"style="font-weight: bold; color: #2A6696">Prof. Rossiter</a> from the Dept. of CSE.
           </p>
-          <p class="normalWords">Izen main interests are programming (web development, software engineering, and recently machine learning), as well as composition of music and editing videos. Below are some examples of the work that he's done.</p>
+          <p class="normalWords">My main interests are programming (web development, software engineering, and recently machine learning), as well as composition of music and editing videos. Below are some examples of the work that he's done.</p>
+        </div>
+        <br><div class="ui divider"></div>
+        <div id="HCIProjects">
+          <h2 class="ui header">
+            COMP 4461 Projects
+            <div class="sub header">Below are projects I have worked on for the course COMP 4461 Human Computer Interaction</div>
+          </h2>
+          <br>
+          <div class="projectImageLinks" style="position: relative; display: flex; flex-direction: row; justify-content: space-between">
+            <a title="Project 1: Interactive Ad for Sustainability" href="./project1.html" style="width: 100px; height: 100px; text-align: center">
+              <img src='./media/greenCampus.jpg'>
+              <p>Project 1</p>
+            </a>
+            <a title="Project 2: Coming soon ... " style="width: 100px; height: 100px; text-align: center">
+              <img src="./media/loading.gif" alt="Project 2 Coming Soon">
+              <p>Project 2</p>
+            </a>
+            <a title="Project 3: Coming soon ..." style="width: 100px; height: 100px; text-align: center">
+              <img src="./media/loading.gif" alt="Project 3 Coming Soon">
+              <p>Project 3</p>
+            </a>
+          </div>
         </div>
         <br><div class="ui divider"></div>
         <div id="PastProjects">
           <h2 class="ui header">
-            Past Projects
+            Personal Projects
             <div class="sub header"><em>Projects I worked on as a student at the <a href="https://www.ust.hk/home" style="color: #2A6696">Hong Kong University of Science and Technology (HKUST)</a> and <a href="https://www.42.us.org/" style="color: #2A6696">42 Silicon Valley School</a></em></div>
           </h2>
         </div>
@@ -85,7 +115,18 @@
               Past Internships
               <div class="sub header"><em>A detailed overview of my experiences from past internships</em></div>
             </h2>
-            <br><br><br><br><br><br><br><br><br>
+            <h4 class="ui header">
+              <em>
+                <span style="font-weight: bold">Dayta AI</span>, Software Engineer Intern
+                <div class="sub header">Jun 2019 - Aug 2019</div>
+              </em>
+            </h4>
+            <h4 class="ui header">
+                <em>
+                  <span style="font-weight: bold">eJoule</span>, Software Engineer Intern
+                  <div class="sub header">Jun 2015 - Jul 2015</div>
+                </em>
+            </h4>
         </div>
         <br><div class="ui divider"></div>
         <div id="MusicAndVideos">
@@ -93,12 +134,21 @@
             Music and Videos
             <div class="sub header"><em>Brief overview of music that I've compsed and videos that I've edited</em></div>
           </h2>          
-          <div class="MusicControls">
-            <audio 
-            controls
-            src="./media/Audio/JoonLoop.wav"
-            >
-            </audio>            
+          <div class="music">
+            <div class="music0" style="margin-top: 1em; display: flex; flex-direction: row; align-items: center">
+              <p style="margin-top: 1em; margin-right: 1em; color: #5A5A5A">Joon's Loop: </p>
+              <audio controls>
+                <source src="./media/Audio/JoonLoop.wav" type="audio/wav">
+              </audio>               
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="videos">
+            <p style="color:#5A5A5A">Assistant camera man & video editor for the Girl Gamer E-Sports Festival 2017</p>
+            <video width="480" height="270" controls>
+              <source src="./media/Videos/GIRL GAMER E-Sports Festival 2017 - Macau.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
         <br><div class="ui divider"></div>
