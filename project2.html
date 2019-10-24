@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Proj 2 AR</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      #LeftHeader {
+        padding-top: 2em
+      }
+      section > div {
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      .normalWords {
+        color:#5A5A5A 
+      }
+      .item {
+        color:#5A5A5A 
+      }
+ 
+    </style>
+    <script>
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="LeftHeader">
+        <h1 class="ui header">Izen Brast Huang</h1>
+        <img src="./media/42Bathroom.png" alt="Izen Brast Huang" width='250px' height='250px'>
+        <br >
+        <p class="normalWords">Undergraduate Student</p>
+        <p style="font-weight: bold; color: #2A6696">Studying Computer Engineering<br>at Hong Kong University of Science and Technology</p>
+        <!-- <p class="view"><a href="http://github.com/izennn">View my projects on GitHub</a></p> -->
+        <p style="font-weight: bold; color: #2A6696"><a href="http://github.com/izennn">GitHub page</a></p> 
+        <p class="view">
+          <a href="./media/IzenHuangResume.pdf" style="font-weight: bold; color: #2A6696">Cirriculum Vitae (CV)</a><br>
+          <small class="normalWords"style="font-style: italic">Last updated Sep 1 2019</small>
+        </p>            
+       <!-- <ul>
+          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
+        </ul> -->
+        <br><br>
+        <h4 class="ui header" style="color: #2A6696">Outline</h6>
+        <div class="ui link list">
+          <a class="item" href="#intro">Introduction</a>
+          <a class="item" href="#problem">The Problem</a>
+          <a class="item" href="#solution">The Solution</a>
+          <a class="item" href="#feedback">Feedback & Personal Evaluation of Prototype</a>
+          <a class="item" href="#concluding_remarks">Concluding Remarks</a>
+          <a class="item" href="#contribution">Personal Contribution</a>
+        </div>
+        <p>
+          <a href="./index.html" style="font-weight: bold; color: #2A6696">Back to main page</a>
+        </p>
+ 
+      </header>
+      <section style="display: flex; flex-direction :column;">
+        <div class="introduction">
+          <h2 class="ui header">Designing an Augmented Reality Paper
+            <p class="sub header">To improve upon pre-existing paper solutions</p>    
+          </h1>
+          <br />
+          <image src="./media/ar_icon.png" style="margin: auto; width: 300px; height: 300px"></image>
+          <br />
+        </div>
+        <div class="ui divider"></div>
+        <div class="contentDiv" id="intro">
+          <h2 class="ui header">
+            Introduction
+          </h2>
+          <p class="normalWords">In this project, we aimed to look at existing paper solutions, and think about different ways in which we coule use augmented reality (AR) to address the limitations of these existing solutions.</p>
+          <p class="normalWords">There are many limitations of traditional paper products, and the 3 main limitations our group decided to focus on were: the limitation of <b>the amount of space</b> on paper, the limited <b>interaction</b> of paper products, and the limited <b>effectiveness of representing 3D objects</b> on paper products.</p>
+        </div>
+        <div class="ui divider"></div>
+        <div class="contentDiv" id="problem">
+          <h2 class="ui header">
+            The Problem
+          </h2>
+          <h4 class="ui header">Discovering the Problem</h4>
+          <p class="normalWords">In this stage of the design process, we aimed to explore a wide variety of paper products and their limitations. To do so, we used a technique called mind-mapping to explore different areas which use paper, and the problems with these existing solutions.</p>
+          <img src="./media/ar_mindmap.jpg" style="margin: auto; text-align: center; width: 80%; display: block"/>
+          <p class="normalWords" style="text-align: center"><i>Mindmap we used to ideate problems</i></p>
+          <br />
+          <p class="normalWords">A few example areas and their limitations we explored were menus used in restaurants, board games used for entertainment, and textbooks used in education. We ended up choosing to tackle the limitations of textbooks used in the education area because, as students, we are in frequent contact with textbook, and have personally suffered from the limitations of traditional textbook, or printed out lecture slides.</p>
+          <h4 class="ui header">Defining the Problem</h4>
+          <p class="normalWords">The main limitation of traditional textbooks we wanted to address is its inability to express 3D objects. For example, when I took UST’s multivariable calculus course, we dealt with problems in the 3D space, and to illustrate this, the instructor had to either try to draw the graphs/curve from different angles, use makeshift paper models, or even try to use his hand to “hold” the models. Whilst the above approaches may have worked for some students, many people whom we conducted admitted to having difficulties with spatial imagining.</p>
+          <p class="normalWords">A second limitation of paper products is its limited space. As 3D models drawn on 2D space often take up much room on the paper, there is a limited number of “drawn models” a piece of paper can fit. Furthermore, for students who need multiple angles of a 3D model to get the whole picture, having multiple angles of 1 3D model on the same paper takes up even more space. With traditional paper products, it is difficult to be both environmentally friendly, and effectively communicate a 3D model at the same time. </p>
+          <p class="normalWords">With our AR solution, <i>we wanted it to effectively represent 3D models, and save the amount of paper a textbook would normally need.</i> A short survey conducted with fellow students in the library confirmed our belief that most students do have a hard time visualizing 3D objects, and an AR solution displaying 3D objects would benefit their learning experience. With a problem defined, we then proceeded to construct a POV (user + need + insight) to begin the solution finding process.</p>
+          <img src="./media/AR_pov.png" style="margin: auto;width: 75%; display: block"/>
+          <p class="normalWords" style="text-align: center"><i>POV = user + need + insight</i></p>
+        </div>
+        <div class="ui divider"></div>
+        <div class="contentDiv" id="solution">
+          <h2 class="ui header">
+            The Solution
+          </h2>
+          <h4 class="ui header">Developing the Solution</h4>
+          <p class="normalWords">After brainstorming different solutions, we conducted more surveys (speed dating) to empathize with the users, and also have feedback on the potential limitations of our proposed solution. A technique we used in part of the survey was storyboarding, which allows to communicate clearly with the viewer of why we wanted to make each solution, and how the solution would be useful/be used. We made storyboards for 4 solutions, and compiled it into a table below:</p>
+          <table class="ui celled table" style="table-layout: auto;">
+            <thead>
+              <tr>
+                <th>Solution</th>
+                <th>Description</th>
+                <th>User Feedback</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="top aligned">Pop-Up Models</td>
+                <td class="top aligned">When the user opens a page, a “pop-up” like those seen on birthday cards appears to represent the 3D structure</td>
+                <td>
+                  <p class="normalWords">Pros:
+                    <ul>
+                      <li>exists in 3D space</li>
+                      <li>Does not rely on technology</li>
+                    </ul>
+                  </p>
+                  <p class="normalWords">Cons:
+                    <ul>
+                      <li>Expensive to make, fragile</li>
+                    </ul>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                  <td class="top aligned">Online Graph Generators</td>
+                  <td class="top aligned">User inputs a formula, or perhaps a molecular formula to render a 3D model on screen</td>
+                  <td>
+                    <p class="normalWords">Pros:
+                      <ul>
+                        <li>good representation</li>
+                      </ul>
+                    </p>
+                    <p class="normalWords">Cons:
+                      <ul>
+                        <li>Takes time to use</li>
+                      </ul>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="top aligned">AR 3D Models</td>
+                    <td class="top aligned">User scans textbook with phone to recognize markers and display a 3D model on screen</td>
+                    <td>
+                      <p class="normalWords">Pros:
+                        <ul>
+                          <li>good representation of 3D object</li>
+                        </ul>
+                      </p>
+                      <p class="normalWords">Cons:
+                        <ul>
+                          <li>Dependent upon camera, may have trouble using it if lights are low</li>
+                        </ul>
+                      </p>
+                    </td>
+                  </tr>
+          </table>
+          <p class="normalWords">After evaluating several solutions, we decided upon the AR solution for it received the most positive feedback. From thereon, we went on to designing and developing the prototype.</p>
+          <h4 class="ui header">Delivering the Solution (Prototyping)</h4>
+          <p class="normalWords">We first found 3D models to be imported to Unity from free online libraries. Unfortunately, we were unable to find 3D models of mathematical graphs/curves online, so we decided to build our first prototype with chemical molecules. Once the model was correctly placed next the marker, we also built a button for the user to rotate the 3D model in space, and finally exported to an android application. Together, the mobile application presented a 3D model attached to the marker, and a button to rotate the model in space. Below is a video demonstration of our prototype:</p>
+          <video width="480" height="270" controls>
+          <source src="./media/Videos/helpar_function.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="ui divider"></div>
+        <div class="contentDiv" id="feedback">
+          <h2 class="ui header">Feedback & Personal Evaluation of Prototype</h2>
+          <p class="normalWords">Overall, the feedback on our prototype was positive, and users said our objectives of effectively representing a 3D model was met. Users were also impressed at how “quick” the 3D models appeared on the screen; this is compared to existing online solutions such as Wolfram Alpha, Desmos online calculator, or Matlab, in which which the user has to first input the chemical name/function, or go through complicated steps of programming in Matlab to render a 3D model. </p>
+          <p class="normalWords">In retrospect, I realized our solution is not a huge extension beyond Wolfram Alpha or Desmos; a true breakthrough in solving this problem might be to use holograms, which represents a model in the actual 3D space. However, until that technology is common, this AR solution might be the best thing.</p>
+        </div>
+        <div class="ui divider"></div>
+        <div class="contentDiv" id="concluding_remarks">
+          <h2 class="ui header">Concluding Remarks</h2>
+          <p class="normalWords">Our first prototype was very basic, but there is much potential. A potential extension to our prototype is a software that could read formulas from the camera, and deduce the required 3D model from that function, and display it onto the screen. That way, we won’t be limited by the number of 3D models available to us. Considering that most mathematical graphs can be easily deduced, this function would not be impossible to implement. This goes beyond mathematics; chemical molecules and other “formulaic” displays can all display “deduced” models, which will not need a pre-downloaded image in the database.</p>
+        </div>
+        <div class="ui divider"></div>
+        <div class="contentDiv" id="contribution">
+          <h2 class="ui header">Personal Contribution</h2>
+          <p class="normalWords">My overall contribution to this project involves being there for the majority of the meeting times and contributing to brainstorming for problems & solutions. Specifically, I have:</p>
+          <div class="ui ordered list">
+            <div class="item">Drawn the mind map</div>
+            <div class="item">Conducted user feedback</div>
+            <div class="item">Helped research 3D models</div>
+            <div class="item">Edited the prototype demonstration video</div>
+            <div class="item">Presented</div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="normalWords"><small>&copy; 2019 <a href="izennn.github.io" style="font-weight: bold; color: #2A6696">Izen Huang</a> ALL RIGHTS RESERVED.</small></p>
+        <!-- <p>This website's styling is from <a href="http://github.com/orderedlist">Steve Smith</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
