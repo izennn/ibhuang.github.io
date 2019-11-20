@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Proj 3 Robot</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      #LeftHeader {
+        padding-top: 2em
+      }
+      section > div {
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      ul > li {
+        color: #5A5A5A
+      }
+      ol > li {
+        color: #5a5a5a
+      }
+      .normalWords {
+        color:#5A5A5A 
+      }
+      .item {
+        color:#5A5A5A 
+      }
+ 
+    </style>
+    <script>
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="LeftHeader" style="overflow-y: auto;">
+        <h1 class="ui header">Izen Brast Huang</h1>
+        <img src="./media/42Bathroom.png" alt="Izen Brast Huang" width='250px' height='250px'>
+        <br >
+        <p class="normalWords">Undergraduate Student</p>
+        <p style="font-weight: bold; color: #2A6696">Studying Computer Engineering<br>at Hong Kong University of Science and Technology</p>
+        <!-- <p class="view"><a href="http://github.com/izennn">View my projects on GitHub</a></p> -->
+        <p style="font-weight: bold; color: #2A6696"><a href="http://github.com/izennn">GitHub page</a></p> 
+        <p class="view">
+          <a href="./media/IzenHuangResume.pdf" style="font-weight: bold; color: #2A6696">Cirriculum Vitae (CV)</a><br>
+          <small class="normalWords"style="font-style: italic">Last updated Sep 1 2019</small>
+        </p>            
+       <!-- <ul>
+          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
+        </ul> -->
+        <h4 class="ui header" style="color: #2A6696">Outline</h4>
+        <div class="ui link list">
+          <a class="item" href="#intro">Introduction</a>
+          <a class="item" href="#problem">The Problem</a>
+          <a class="item" href="#solution">The Solution</a>
+          <a class="item" href="#feedback">Feedback & Personal Evaluation of Prototype</a>
+          <a class="item" href="#concluding_remarks">Concluding Remarks</a>
+          <a class="item" href="#contribution">Personal Contribution</a>
+        </div>
+        <p>
+          <a href="./index.html" style="font-weight: bold; color: #2A6696">Back to main page</a>
+        </p>
+      </header>
+      <section style="display: flex; flex-direction :column;">
+        <div class="introduction">
+          <h2 class="ui header">
+            Huamn Robot Interaction
+            <p class="sub header">To explore solutions through interaction with robots</p>    
+          </h2>
+          <br />
+          <image src="./media/robot_icon.png" style="margin-left: auto; width: 150px; height: 150px"></image>
+          <br />
+        </div>
+        <div class="contentDiv" id="intro">
+          <h2 class="ui header">
+            Introduction
+          </h2>
+          <p class="normalWords">In this project, we looked at how we can use the <span><a href="https://www.softbankrobotics.com/us/pepper">Softbank Pepper</a></span> robot to provide solutions in the education sector. This article will be divided into 3 main parts: <b>1. How we used the double diamond method to focus in on a solution</b>, <b>2. Once we decided upon a solution, how we built our prototype</b>, and finally, <b>3. reflection on the project.</b></p>
+        </div>
+        <div class="ui horizontal divider">
+          <i class="search icon"></i>
+         1. Finding a solution
+        </div>
+        <div class="contentDiv" id="problem">
+          <h4 class="ui header">Discover: gaining insight into the problem</h4>
+          <p class="normalWords">To better understand the current problems in education and how our robot could address these problems, we sat down and brainstormed. We realized one major advantage that a robot has over other existing solutions (e.g. educational apps) is <b>its ability to mimic human gestures</b> (ability to mimic hand gestures, blinking of eyes), which gives the users a semblance of interacting with a human. We concluded that Pepper would be best used as replacement-humans, for instances in which the user for whatever reason, cannot interact with a real human.</p>
+
+          <h4 class="ui header">Defining: the area to focus upon</h4>
+          <p class="normalWords">The problem areas we brainstormed were: <b>academics, life/social skills, hobbies, and health.</b> We decided upon the academics field because we thought it would be more realistic that academic institutions would have a few of these robots to rent out, as opposed to individual robots in the homes for personal use. Furthermore, we thought using Pepper as a replacement for tests & interviews in particular were the most applicable to us, as many of us are in the process of job search and  found an interview robot the most applicable. </p>
+          <p class="normalWords">All the problems we brainstormed within academics shared the same thread of <b><i>the need to practice speaking with a human</i></b>, so that became the specific problem we decided to address.</p>
+
+          <h4 class="ui header">Develop: potential solutions</h4>
+          <p class="normalWords">We came up with 3 scenarios in which pepper could address the problem. Then, we divided our team into 3 groups to gauge user feedback on each of these solutions.</p>
+          <p class="normalWords">Albert and I were responsible for the scenario of a user needing to practice a foreign language in front of a human evaluator for a standardized test. Below is a storyboard we showed users to get feedback.</p>
+          <br />
+          <img src="./media/rhi_storyboard.png" style="margin: auto;width: 75%; display: block"/>
+          <p class="normalWords" style="text-align: center"><i>Storyboard of robot as solution to practicing standardized speaking</i></p>
+          <br />
+          <p class="normalWords">The feedback for our storyboard was mixed. The pros of our solution were: </p>
+          <ul>
+            <li>Very accessilbe, can be used anytime</li>
+            <li>A great step towards praciticing in front of people</li>
+          </ul>
+          <p class="normalWords">The cons were:</p>
+          <ul>
+            <li>Robot is a not a good indicator to how humans will react (robot limited in how well it can imitate human reactions, physical movements, etc)</li>
+          </ul>     
+          
+          <h4 class="ui header">Focusing in: on a solution</h4>
+          <p class="normalWords">In the end, our group decided to focus on the scenario of <b>the need to practice interviews</b> for a few reasons:</p>
+          <p class="normalWords">To ensure that our design is <b>user-centered</b>, we constructed the following POVs: </p>
+          <ul>
+            <li>We do not always have friends or advisors regularly available to practice interview skills with</li>
+            <li>Interviews tend to have set/predictable questions, which is feasible for Pepper to do</li>
+            <li>A robot with limited human imitation (blinking eyes, hand gestures) is still better than an “interview practicer” app</li>
+          </ul>
+          <p class="normalWords">To ensure that our design is <b>user-centered</b>, we constructed the following POVs: </p>
+          
+          <h4 class="ui header">Point-of-Views</h4>
+          <br />
+          <img src="./media/rbi_pov_1.png" style="margin: auto; width: 90%; display: block;" />
+          <p class="normalWords" style="text-align: center"><i>POV #1</i></p>
+          <img src="./media/rbi_pov_2.png" style="margin: auto; width: 90%; display: block;" />
+          <p class="normalWords" style="text-align: center"><i>POV #2</i></p>
+          <p class="normalWords">Having the defined POVs allowed us to better ideate what kind of features we wanted our robots to have, and ensure that our solution was user-centered.</p>
+
+        </div>
+        <div class="ui horizontal divider">
+          <i class="wrench icon"></i>          
+          2. Building the prototype
+        </div>
+        <div class="contentDiv" id="solution">
+          <h4 class="ui header">Prototype</h4>
+          <p class="normalWords">Our prototype was limited by 2 main factors: </p>
+          <ol>
+            <li>The POVs (user needs)</li>
+            <li>The limitation of robot features/technology</li>
+          </ol>
+          <p class="normalWords">Given the POVs and limitations of the Pepper robot, we wanted to <b>allow the user to feel: </b></p>
+          <h5 class="ui header">1. Feel Like Talking to a Real Interviewer</h5>
+          <p class="normalWords">By having Pepper perform basic head nodding, blinking of eyes, and hand gestures, the user feels like he is talking to a real interviewer.</p>
+          <h5 class="ui header">2. Have a Relatively Realistic Set of “Typical Interview Questions”</h5>
+          <p class="normalWords">Pepper utilizes speech recognition to detect keywords, such as “interview”, and follows up with appropriate set of questions.</p>
+          <h5 class="ui header">3. Practice Conducting Himself in a Professional Manner</h5>
+          <p class="normalWords">We wanted to have Pepper give feedback on the user’s way of conducting himself. Through <b>emotion recognition</b>, Pepper can remind the user to be more enthusiastic and engaging. Pepper’s <b>eye contact detection</b> reminds the user to maintain strong eye contact throughout the interview. Lastly, simple <b>sound peak detection</b> notifies the user if he is speaking too loud/too soft.</p>
+
+          <p class="normalWords">Below is a short video demonstration of how Pepper can serve as practice for an interview: </p>
+          <!-- <video width="480" height="270" controls> -->
+          <!-- <source src="./media/Videos/HRI Video Prototype.mp4" type="video/mp4"> -->
+          <!-- </video> -->
+        </div>
+        <div class="ui horizontal divider">
+          <i class="pencil alternate icon"></i>
+          3. reflection
+        </div>
+        <div class="reflectionDiv" id="reflection">
+          <h4 class="ui header">Personal Contribution</h4>
+          <p class="normalWords">We all had a relatively equal share of contribution towards this project. I was specifically involved in all of the brainstorming, story boarding, as well as initial exploring of Pepper’s functionalities. </p>
+          <p class="normalWords">While was not the one who coded Pepper’s program, I was there for testing and giving suggestions/feedback.</p>
+
+          <h4 class="ui header">Reflection on the Project</h4>
+          <p class="normalWords">This project allowed us to explore the functionalities of robots, and their potential in addressing some of the problems found in education. One important distinction we kept in mind throughout this project was <b>how robots differ from other solutions. A robot as a human replacement is essential because it can <i>replicate human movements. </i></b>In specifics of our project, we could have built an App that listens to the user’s responses, and even use camera vision to detect facial expressions/emotions. However, it would still not address the need to talk to a “person” with blinking eyes, head movement, and hand gestures. </p>
+          <p class="normalWords"><b>Pepper as an interview practice robot addresses the need to have a relatively realistic, readily available practice interviewer.</b> While there are many limitations and flaws in our current model, I believe with further development is necessary before it could be used as a rent-able practice device to be used in University environments.</p>
+          
+          <h4 class="ui header">Personal Views on HRI</h4>
+          <p class="normalWords">Personally, I think the gap between humans and robots is still far too wide for robots to completely replace humans, especially for practice interviews. With the current technology, Pepper is better suited for more routine roles such as a sales clerk replacement, or a “store welcomer” to greet customers.</p>
+        </div>
+      </section>
+      <footer>
+        <p class="normalWords"><small>&copy; 2019 <a href="izennn.github.io" style="font-weight: bold; color: #2A6696">Izen Huang</a> ALL RIGHTS RESERVED.</small></p>
+        <!-- <p>This website's styling is from <a href="http://github.com/orderedlist">Steve Smith</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
